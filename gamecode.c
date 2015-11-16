@@ -11,6 +11,7 @@ void FinalReport(int *FalseCount, int *PlayCount, float *TotalScore);
 bool ContinueQuestion(int FalseCount);
 float ScoreCalc(int TurnCount,int PlayCount);
 void FinalClue(int *Answer);
+
 int main(void)
 {
     int Answer,FalseCount,Guess,LastAnswer,PlayCount,TurnCount,i;
@@ -103,6 +104,7 @@ int main(void)
 
 bool ContinueQuestion(int FalseCount)
 {
+    //Asks the player, do they want to continue?
     char ContinuePrompt;
         if(FalseCount < 3)
             {
